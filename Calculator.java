@@ -42,17 +42,14 @@ public class Calculator {
         }
     }
 
-    // Проверка, является ли строка римским числом
     private static boolean isRoman(String input) {
         return input.matches("[IVXLCMD]+");
     }
 
-    // Проверка, является ли строка арабским числом
     private static boolean isArabic(String input) {
         return input.matches("\\d+");
     }
 
-    // Преобразование римского числа в арабское
     private static int toArabic(String roman) {
         Map<Character, Integer> romanNumerals = new HashMap<>();
         romanNumerals.put('I', 1);
